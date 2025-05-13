@@ -4,6 +4,9 @@ import StarRating from './components/3 star rating';
 import ImageSlider from './components/4 image-slider';
 import Accordian from './components/accordian';
 import LoadMoreData from './components/5 load-more-data-api';
+import TreeView from './components/6 tree-view';
+import { menus } from './components/6 tree-view/data';
+
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
       {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={"10"}></ImageSlider> */}
 
       {/* Load more products component */}
-      <LoadMoreData></LoadMoreData>
+      {/* <LoadMoreData></LoadMoreData> */}
+
+      {/* Tree view component */}
+      <TreeView menus={menus} />
 
 
     </div>
